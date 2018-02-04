@@ -9,7 +9,7 @@ Oracle DB Password reset tool
 - It is best to run on clients where Cssh is available (MacOS or Linux). 
 - It does not replace OEM, but it is very useful tool where OEM is not available. 
 
-<img src="readme/oracle-db-monitor-icon.png" width="200">
+<img src="readme/db-password-reset-tool-icon.png" width="200">
 
 ## Installation
 
