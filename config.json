@@ -1,0 +1,10 @@
+{
+"Ora_dba_user":      "password_reset_user",
+"Ora_dba_user_pw":   "<password for password_reset_user>",
+"Ora_sqlplus_path":  "/opt/oracle/product/12.1.0.2/bin",
+"Ldap_server":       "hostname for Ldap server",
+"Ldap_port":         389,
+"Ldap_realm":        "@XXX.COMPANY.COM",
+"Listen_port":       "9090"
+}
+
