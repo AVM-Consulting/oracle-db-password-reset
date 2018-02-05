@@ -7,7 +7,7 @@ Oracle DB Password reset tool
 
 It consist of single web form as shown below:
 
-<img src="readme/DB_Password_Reset_Tool_sceenshot.png" width="1200">
+<img src="readme/DB_Password_Reset_Tool_sceenshot.png" width="700">
 
 And it does following:
 
@@ -19,6 +19,8 @@ Note 1: AD username must match DB username. </br>
 Note 2: DB user (amoseyev) has to be created explicitly. The tool does not create it. </br>
 
 ## Installation
+
+Installation steps for any linux environment
 
 #### Run below steps on DB host
 
@@ -32,7 +34,7 @@ SQL> grant connect to password_reset_user;
 
 #### All below steps run on host where password reset tool is installed. "toolhost"
 
-2. Install Oracle client software on the machine. (Instant client is good enough)
+2. Install Oracle client software. (Instant client is good enough)
 
 3. Create env file:
 
