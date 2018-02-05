@@ -70,6 +70,7 @@ openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 1000 -nod
 9. Login to https://toolhost:9090/login and use it!
 
 
+====================
 
 Optionaly, Add lines to sqlnet.ora, so SSL connection from the SQL client is enforced, so passwords do not fly over net un-encrypted.
 
@@ -85,7 +86,7 @@ EOF
 ```
 
 
-#### Support
+## Support
 
 For any support questions please contact us: info@avmconsulting.net
 
