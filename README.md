@@ -86,8 +86,13 @@ SQLNET.ENCRYPTION_TYPES_CLIENT=AES128
 EOF
 ```
 
+## Integrations
+
+Current version of the tool is designed to reset passwords on Oracle DB. 
+But functionality can be easily extended to change password on any other stack. Contact us info@avmconsulting.net for extension requests.
 
 ## Support
 
 For any support questions please contact us: info@avmconsulting.net
+
 
