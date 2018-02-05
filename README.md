@@ -15,7 +15,7 @@ And it does following:
 - If authentication is successful it connect to database ("proddb" in this example). It connects to DB with password_reset_user user credentials. User has to have ALTER USER privilege.
 - It resets password for DB user amoseyev to whatever is specified in "New DB Password" field in the form.
 
-Note 1: AD user name must match DB username. </br>
+Note 1: AD username must match DB username. </br>
 Note 2: DB user (amoseyev) has to be created explicitly. The tool does not create it. </br>
 
 ## Installation
