@@ -20,7 +20,7 @@ Note 2: DB user (amoseyev) has to be created explicitly. The tool does not creat
 
 ## Installation
 
-# Run below steps on DB host
+#### Run below steps on DB host
 
 1. On target database create user password_reset_user with permissions to change password for other users:
 
@@ -30,7 +30,7 @@ SQL> grant alter user to password_reset_user;
 SQL> grant connect to password_reset_user;
 ```
 
-# All below steps run on host where password reset tool is installed. "toolhost"
+#### All below steps run on host where password reset tool is installed. "toolhost"
 
 2. Install Oracle client software on the machine. (Instant client is good enough)
 
