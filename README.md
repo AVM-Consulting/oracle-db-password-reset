@@ -77,7 +77,6 @@ openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 1000 -nod
 Optionaly, Add lines to sqlnet.ora, so SSL connection from the SQL client is enforced, so passwords do not fly over net un-encrypted.
 
 ```Shell
-export ORACLE_HOME=/opt/oracle/product/12.1.0.2
 cat > $ORACLE_HOME/network/admin/sqlnet.ora <<EOF
 # require encryption from client as password reset tool runs from this host.
 SQLNET.CRYPTO_CHECKSUM_CLIENT = required
