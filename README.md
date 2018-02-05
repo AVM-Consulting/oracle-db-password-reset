@@ -3,7 +3,7 @@ Oracle DB Password reset tool
 
 <img src="readme/db-password-reset-tool-icon.png" width="200">
 
-#### DB Password reset tool is super simple tool to allow user reset his own user password on database.
+#### DB Password reset tool is super simple self-service web interface to allow user reset his/her own DB user password on database.
 
 It consist of single web form as shown below:
 
@@ -15,10 +15,12 @@ And it does following:
 - If authentication is successful it connect to database ("proddb" in this example). It connects to DB with password_reset_user user credentials. User has to have ALTER USER privilege.
 - It resets password for DB user amoseyev to whatever is specified in "New DB Password" field in the form.
 
-Note 1: AD user name must match DB username
-Note 2: DB user (amoseyev) has to be created explicitly. The tool does not create it.
+Note 1: AD user name must match DB username. </br>
+Note 2: DB user (amoseyev) has to be created explicitly. The tool does not create it. </br>
 
 ## Installation
+
+# Run below steps on DB host
 
 1. On target database create user password_reset_user with permissions to change password for other users:
 
@@ -28,7 +30,7 @@ SQL> grant alter user to password_reset_user;
 SQL> grant connect to password_reset_user;
 ```
 
-All below steps run on host where password reset tool is installed. "toolhost"
+# All below steps run on host where password reset tool is installed. "toolhost"
 
 2. Install Oracle client software on the machine. (Instant client is good enough)
 
@@ -65,9 +67,11 @@ openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 1000 -nod
 ./login
 ```
 
-9. Login to https://toolhost:9090/login and use it.
+9. Login to https://toolhost:9090/login and use it!
 
-10. (Optional) Add lines to sqlnet.ora, so SSL connection from the SQL client is enforced, so passwords do not fly over net un-encrypted.
+
+
+Optionaly, Add lines to sqlnet.ora, so SSL connection from the SQL client is enforced, so passwords do not fly over net un-encrypted.
 
 ```Shell
 export ORACLE_HOME=/opt/oracle/product/12.1.0.2
@@ -79,4 +83,9 @@ SQLNET.ENCRYPTION_CLIENT=required
 SQLNET.ENCRYPTION_TYPES_CLIENT=AES128
 EOF
 ```
+
+
+#### Support
+
+For any support questions please contact us: info@avmconsulting.net
 
